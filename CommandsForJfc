@@ -1,0 +1,11 @@
+Commands to create the jfc
+
+1)mvn clean package
+
+
+2)java \
+  -XX:StartFlightRecording=name=RedisTutorialRec,\
+settings=default,\
+filename=redis-tutorial.jfr,\
+duration=10m \
+  -jar target/redis_cache-0.0.1-SNAPSHOT.jar
